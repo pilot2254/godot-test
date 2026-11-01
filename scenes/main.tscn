@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://b7fd61gk3a6f0"]
+
+[ext_resource type="Script" uid="uid://d1rmkr34ocuro" path="res://scripts/mr_player.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://bcos4r0xj3rlw" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://durrg6p8k8q1s" path="res://scenes/coin.tscn" id="2_0wfyh"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g4v7s"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_g4v7s"]
+
+[node name="please help my poor soul at 1 am" type="Node3D" unique_id=1137122243]
+script = ExtResource("1_sugp2")
+
+[node name="is this really a floor?" type="CSGBox3D" parent="." unique_id=372631276]
+use_collision = true
+size = Vector3(20, 0.05, 20)
+
+[node name="i brighten up stuff" type="DirectionalLight3D" parent="." unique_id=2072944487]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+
+[node name="PLAYER NGA" type="CharacterBody3D" parent="." unique_id=1054576746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("1_o5qli")
+
+[node name="players hentai tentacles as a collision" type="CollisionShape3D" parent="PLAYER NGA" unique_id=599461989]
+shape = SubResource("CapsuleShape3D_g4v7s")
+
+[node name="players naked body" type="MeshInstance3D" parent="PLAYER NGA" unique_id=1380378092]
+transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_g4v7s")
+
+[node name="Head" type="Node3D" parent="PLAYER NGA" unique_id=1769076963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="pornhub gay casting camera - first person edition" type="Camera3D" parent="PLAYER NGA/Head" unique_id=412898421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5052466)
+
+[node name="jewish instrument" parent="." unique_id=1061615213 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6332865, 1.0232923, -5.980654)
+
+[node name="jewish instrument2" parent="." unique_id=1136075901 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46666718, 1.0232923, -5.3154426)
+
+[node name="jewish instrument3" parent="." unique_id=1886000587 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.115898, 1.0232923, -3.0734348)
+
+[node name="jewish instrument4" parent="." unique_id=1737225915 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3202457, 1.0232923, -5.7589173)
+
+[node name="jewish instrument5" parent="." unique_id=276939865 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.063734, 1.0232923, -1.8415632)
+
+[node name="jewish instrument6" parent="." unique_id=1253203837 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1666508, 1.0232923, -8.14875)
+
+[node name="jewish instrument7" parent="." unique_id=378163196 instance=ExtResource("2_0wfyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.737605, 1.0232923, -7.6560016)

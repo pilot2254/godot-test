@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://durrg6p8k8q1s"]
+
+[ext_resource type="Script" uid="uid://cbwtmd0dnpsir" path="res://scripts/coin.gd" id="1_rwqht"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_g4v7s"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_g4v7s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rwqht"]
+emission_enabled = true
+emission = Color(0.74501616, 0.5946485, 0, 1)
+emission_energy_multiplier = 6.24
+
+[node name="jewish instrument" type="Area3D" unique_id=1061615213]
+script = ExtResource("1_rwqht")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1519491460]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("SphereShape3D_g4v7s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" unique_id=520429559]
+transform = Transform3D(0.905, 0, 0, 0, 0.905, 0, 0, 0, 0.905, 0, 0, 0)
+mesh = SubResource("SphereMesh_g4v7s")
+surface_material_override/0 = SubResource("StandardMaterial3D_rwqht")
