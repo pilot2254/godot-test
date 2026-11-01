@@ -8,63 +8,63 @@
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_g4v7s"]
 
-[node name="please help my poor soul at 1 am" type="Node3D" unique_id=1137122243]
+[node name="Main" type="Node3D" unique_id=1137122243]
 script = ExtResource("1_sugp2")
 
-[node name="is this really a floor?" type="CSGBox3D" parent="." unique_id=372631276]
+[node name="Floor" type="CSGBox3D" parent="." unique_id=372631276]
 use_collision = true
 size = Vector3(20, 0.05, 20)
 
-[node name="i brighten up stuff" type="DirectionalLight3D" parent="." unique_id=2072944487]
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=2072944487]
 transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
 
-[node name="PLAYER NGA" type="CharacterBody3D" parent="." unique_id=1054576746]
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1054576746]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_o5qli")
 
-[node name="players hentai tentacles as a collision" type="CollisionShape3D" parent="PLAYER NGA" unique_id=599461989]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=599461989]
 shape = SubResource("CapsuleShape3D_g4v7s")
 
-[node name="players naked body" type="MeshInstance3D" parent="PLAYER NGA" unique_id=1380378092]
-transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 0, 0, 0)
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=1380378092]
 mesh = SubResource("CapsuleMesh_g4v7s")
 
-[node name="Head" type="Node3D" parent="PLAYER NGA" unique_id=1769076963]
+[node name="Head" type="Node3D" parent="Player" unique_id=1769076963]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
-[node name="pornhub gay casting camera - first person edition" type="Camera3D" parent="PLAYER NGA/Head" unique_id=412898421]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5052466)
+[node name="Camera3D" type="Camera3D" parent="Player/Head" unique_id=412898421]
 
-[node name="jewish instrument" parent="." unique_id=1061615213 instance=ExtResource("2_0wfyh")]
+[node name="Coin1" parent="." unique_id=1061615213 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.6332865, 1.0232923, -5.980654)
 
-[node name="jewish instrument2" parent="." unique_id=1136075901 instance=ExtResource("2_0wfyh")]
+[node name="Coin2" parent="." unique_id=1136075901 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.46666718, 1.0232923, -5.3154426)
 
-[node name="jewish instrument3" parent="." unique_id=1886000587 instance=ExtResource("2_0wfyh")]
+[node name="Coin3" parent="." unique_id=1886000587 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.115898, 1.0232923, -3.0734348)
 
-[node name="jewish instrument4" parent="." unique_id=1737225915 instance=ExtResource("2_0wfyh")]
+[node name="Coin4" parent="." unique_id=1737225915 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.3202457, 1.0232923, -5.7589173)
 
-[node name="jewish instrument5" parent="." unique_id=276939865 instance=ExtResource("2_0wfyh")]
+[node name="Coin5" parent="." unique_id=276939865 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.063734, 1.0232923, -1.8415632)
 
-[node name="jewish instrument6" parent="." unique_id=1253203837 instance=ExtResource("2_0wfyh")]
+[node name="Coin6" parent="." unique_id=1253203837 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1666508, 1.0232923, -8.14875)
 
-[node name="jewish instrument7" parent="." unique_id=378163196 instance=ExtResource("2_0wfyh")]
+[node name="Coin7" parent="." unique_id=378163196 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.737605, 1.0232923, -7.6560016)
 
-[node name="dr hud" type="CanvasLayer" parent="." unique_id=461215010]
+[node name="HUD" type="CanvasLayer" parent="." unique_id=461215010]
 
-[node name="score" type="Label" parent="dr hud" unique_id=2090045993]
+[node name="ScoreLabel" type="Label" parent="HUD" unique_id=2090045993]
+unique_name_in_owner = true
 offset_right = 232.0
 offset_bottom = 75.0
 theme_override_font_sizes/font_size = 32
 text = "score: 0"
 
-[node name="win text" type="Label" parent="dr hud" unique_id=1976503598]
+[node name="WinLabel" type="Label" parent="HUD" unique_id=1976503598]
+unique_name_in_owner = true
 visible = false
 anchors_preset = 15
 anchor_right = 1.0

@@ -1,8 +1,7 @@
 extends Node3D
 
-# i kinda hate that i have to hardcode this bs like an idiot
-@onready var score_label: Label = $"dr hud/score"
-@onready var win_label: Label = $"dr hud/win text"
+@onready var score_label: Label = %ScoreLabel
+@onready var win_label: Label = %WinLabel
 
 var score := 0
 var total := 0
