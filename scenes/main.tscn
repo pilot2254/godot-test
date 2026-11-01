@@ -55,3 +55,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1666508, 1.0232923, -8.1487
 
 [node name="jewish instrument7" parent="." unique_id=378163196 instance=ExtResource("2_0wfyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.737605, 1.0232923, -7.6560016)
+
+[node name="dr hud" type="CanvasLayer" parent="." unique_id=461215010]
+
+[node name="score" type="Label" parent="dr hud" unique_id=2090045993]
+offset_right = 232.0
+offset_bottom = 75.0
+theme_override_font_sizes/font_size = 32
+text = "score: 0"
+
+[node name="win text" type="Label" parent="dr hud" unique_id=1976503598]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 477.0
+offset_top = 237.0
+offset_right = -503.0
+offset_bottom = -274.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "you won. press r to restart <3"
+horizontal_alignment = 1
+vertical_alignment = 1
