@@ -15,9 +15,6 @@ size = Vector3(10, 0.05, 10)
 [node name="i brighten up stuff" type="DirectionalLight3D" parent="." unique_id=2072944487]
 transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
 
-[node name="pornhub gay casting camera" type="Camera3D" parent="i brighten up stuff" unique_id=412898421]
-transform = Transform3D(1, 0, 0, 0, 0.90630776, 0.42261827, 0, -0.42261827, 0.90630776, 0, 5, 10)
-
 [node name="PLAYER NGA" type="CharacterBody3D" parent="." unique_id=1054576746]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_ig7tw")
@@ -28,3 +25,9 @@ shape = SubResource("CapsuleShape3D_g4v7s")
 [node name="players naked body" type="MeshInstance3D" parent="PLAYER NGA" unique_id=1380378092]
 transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, 0, 0, 0)
 mesh = SubResource("CapsuleMesh_g4v7s")
+
+[node name="Head" type="Node3D" parent="PLAYER NGA" unique_id=1769076963]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="pornhub gay casting camera - first person edition" type="Camera3D" parent="PLAYER NGA/Head" unique_id=412898421]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.5052466)
